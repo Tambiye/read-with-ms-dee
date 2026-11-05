@@ -59,9 +59,10 @@ export default function Footer() {
               className="footer-logo-image"
             />
           </Link>
-          <p className="footer-copyright">
-            &copy; {currentYear} Read with Mrs Dee. All rights reserved.
-          </p>
+       
+      <p>
+        © {currentYear ?? ""} Read With Mrs Dee. All rights reserved.
+      </p>
         </div>
 
         {/* Center - Social Links */}
