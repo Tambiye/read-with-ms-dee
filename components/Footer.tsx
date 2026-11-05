@@ -24,7 +24,7 @@ const socialLinks = [
 ];
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+ const currentYear = 2026;
 
   return (
     <footer className="footer" id="contact">
@@ -60,9 +60,7 @@ export default function Footer() {
             />
           </Link>
        
-      <p>
-        © {currentYear ?? ""} Read With Mrs Dee. All rights reserved.
-      </p>
+    <p>© {currentYear} Read With Mrs Dee. All rights reserved.</p>
         </div>
 
         {/* Center - Social Links */}
