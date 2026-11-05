@@ -144,10 +144,10 @@ export default function Navbar() {
         aria-hidden={!isOpen}
         inert={!isOpen}
       >
-        <p className="mobile-menu-header">
+        {/* <p className="mobile-menu-header">
           <FiBookOpen size={17} />
           <span>Explore Read With Mrs Dee</span>
-        </p>
+        </p> */}
 
         {navLinks.map((link, index) => (
           <Link
