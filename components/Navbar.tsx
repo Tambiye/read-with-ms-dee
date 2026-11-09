@@ -16,7 +16,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Our Services", href: "#services" },
   { label: "Why Read With Us", href: "#why-choose-us" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -110,13 +110,15 @@ export default function Navbar() {
 
       <div className="nav-actions">
         <Link
-          href="#contact"
-          className="nav-cta"
-          onClick={closeMenu}
-        >
-          <span>Start Reading</span>
-          <FiArrowUpRight size={16} />
-        </Link>
+  href="https://wa.me/2348062768868?text=Hello%20I%20would%20like%20to%20inquire%20about..."
+  className="nav-cta"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={closeMenu}
+>
+  <span>Start Reading</span>
+  <FiArrowUpRight size={16} />
+</Link>
 
         <button
           className="hamburger"
@@ -162,15 +164,17 @@ export default function Navbar() {
           </Link>
         ))}
 
-        <Link
-          href="#contact"
-          onClick={closeMenu}
-          className="mobile-menu-button"
-          tabIndex={isOpen ? 0 : -1}
-        >
-          Start Reading
-          <FiArrowUpRight size={18} />
-        </Link>
+     <Link
+  href="https://wa.me/2348062768868?text=Hello%20I%20would%20like%20to%20inquire%20about..."
+  onClick={closeMenu}
+  className="mobile-menu-button"
+  tabIndex={isOpen ? 0 : -1}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Start Reading
+  <FiArrowUpRight size={18} />
+</Link>
 
         <p className="mobile-menu-note">
           Discover stories. Grow through reading.

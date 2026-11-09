@@ -115,10 +115,15 @@ export default function WhyChooseUs() {
           <p className="why-choose-cta-text">
             Let&apos;s get your child reading, writing and growing!
           </p>
-          <Link href="#contact" className="why-choose-cta-button">
-            <span>Get In Touch</span>
-            <FiArrowRight size={16} />
-          </Link>
+         <Link
+  href="https://wa.me/2348062768868?text=Hello%20I%20would%20like%20to%20inquire%20about..."
+  className="why-choose-cta-button"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span>Get In Touch</span>
+  <FiArrowRight size={16} />
+</Link>
         </div>
       </div>
     </section>
